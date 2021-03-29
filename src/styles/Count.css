@@ -1,0 +1,29 @@
+.countdown {
+    text-align: center;
+    margin: 300px;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+.align {
+    text-align: center;
+    margin: -300px;
+}
+
+.hello {
+    text-align: center;
+    margin: 300px;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 100px;
+    animation-name: hello;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hello {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
