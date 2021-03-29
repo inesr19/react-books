@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react";
+import { Link, Route } from "react-router-dom";
 import "../styles/Count.css";
+import About from "./About";
 
-function Count() { 
+function Count(props) { 
     const [counter, setCounter] = useState(5);
       
     useEffect(() => {
@@ -17,7 +19,8 @@ if(counter === 0) {
     <h1 className="hello">Hello World</h1>
     <p className="align">Click the button below to learn more.
     <hr />
-    <button>Click me!</button>
+    <Link to="/about" role="button" className="btn btn-link">Click me!</Link>
+    <Route exact path={`${props.match.url}/about`} component={About} />
     </p>
     </div>
     )

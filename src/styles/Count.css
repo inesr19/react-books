@@ -27,3 +27,9 @@
   50%  {color: blue;}
   100% {color: green;}
 }
+
+.btn {
+    box-shadow: 0 0 10px black;
+    border-radius:  5px;
+    color: black;
+}
